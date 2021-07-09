@@ -113,3 +113,9 @@ void main() {
 }
 
 ```
+
+E por fim executando o comando:
+
+```bash
+dart bin/new_query_test.dart
+```
