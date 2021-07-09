@@ -1,0 +1,17 @@
+name: challenge_service
+description: Service repo for app flutter.
+version: 0.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  ferry: 0.10.2+2
+  gql_http_link: ^0.4.0
+  gql_websocket_link: 0.3.2-alpha+1625174597506
+  web_socket_channel: ^2.1.0
+  dotenv: ^3.0.0
+
+dev_dependencies:
+  ferry_generator: ^0.4.3
+  build_runner: ^2.0.5

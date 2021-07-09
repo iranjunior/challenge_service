@@ -1,0 +1,10 @@
+subscription FetchBalance {
+  wealthSummary {
+    cdi
+    total
+    profitability
+    id
+    hasHistory
+    gain
+  }
+}

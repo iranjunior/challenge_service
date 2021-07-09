@@ -1,0 +1,36 @@
+targets:
+  $default:
+    builders:
+      gql_build|schema_builder:
+        enabled: true
+      gql_build|ast_builder:
+        enabled: true
+      gql_build|data_builder:
+        enabled: true
+        options:
+          schema: challenge_service|lib/graphql/wealth_summary/schema.graphql
+          type_overrides:
+            cdi:
+             name: double
+      gql_build|var_builder:
+        enabled: true
+        options:
+          schema: challenge_service|lib/graphql/wealth_summary/schema.graphql
+          type_overrides:
+            cdi:
+             name: double
+      gql_build|serializer_builder:
+        enabled: true
+        options:
+          schema: challenge_service|lib/graphql/wealth_summary/schema.graphql
+          type_overrides:
+            cdi:
+             name: double
+
+      ferry_generator|req_builder:
+        enabled: true
+        options:
+          schema: challenge_service|lib/graphql/wealth_summary/schema.graphql
+          type_overrides:
+            cdi:
+             name: double
